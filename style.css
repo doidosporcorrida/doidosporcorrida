@@ -861,3 +861,26 @@ nav button:hover {
     top: 6.5px;
     left: 12px;
 }
+@media (max-width: 700px) {
+
+    #milha .ranking-table,
+    [id="5km"] .ranking-table,
+    [id="10km"] .ranking-table,
+    #meia .ranking-table,
+    #maratona .ranking-table {
+        min-width: 800px;
+    }
+
+    #milha .ranking-table th,
+    #milha .ranking-table td,
+    [id="5km"] .ranking-table th,
+    [id="5km"] .ranking-table td,
+    [id="10km"] .ranking-table th,
+    [id="10km"] .ranking-table td,
+    #meia .ranking-table th,
+    #meia .ranking-table td,
+    #maratona .ranking-table th,
+    #maratona .ranking-table td {
+        white-space: nowrap;
+    }
+}
