@@ -1,0 +1,863 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    overflow-y: scroll;
+}
+
+header{
+
+    background:#111;
+    color:white;
+    padding:35px;
+    text-align:center;
+
+}
+
+.logo h1{
+
+    margin:0;
+    font-size:42px;
+
+}
+
+.logo p{
+
+    font-size:24px;
+    margin:10px 0;
+
+}
+
+.logo span{
+
+    color:#d4d4d4;
+    font-size:15px;
+
+}
+
+nav{
+
+    margin-top:30px;
+
+}
+
+nav ul{
+
+    list-style:none;
+    padding:0;
+
+}
+
+nav li{
+
+    display:inline-block;
+    margin:0 18px;
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+.hero{
+
+    text-align:center;
+    padding:25px 20px;
+
+}
+
+.hero h2{
+
+    font-size:38px;
+    margin-top:0;
+    margin-bottom:10px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+
+}
+
+.cards{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:40px;
+
+}
+
+.card{
+
+    background:white;
+    width:220px;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo div {
+    text-align: left;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.ranking-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.ranking-header {
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
+.ranking-header h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    }
+
+.ranking-header p {
+    font-size: 18px;
+    margin: 0;
+    color: #555;
+}
+
+.ranking-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.category-button {
+    border: 1px solid #111;
+    background: white;
+    color: #111;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category-button.active {
+    background: #111;
+    color: white;
+}
+
+.table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    margin: -10px 30px 30px;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#provas-milha,
+#provas-5km,
+#provas-10km,
+#provas-meia,
+#provas-maratona {
+    padding-top: 20px;
+}
+
+#provas-milha .ranking-header,
+#provas-5km .ranking-header,
+#provas-10km .ranking-header,
+#provas-meia .ranking-header,
+#provas-maratona .ranking-header {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#provas-milha .ranking-header h2,
+#provas-5km .ranking-header h2,
+#provas-10km .ranking-header h2,
+#provas-meia .ranking-header h2,
+#provas-maratona .ranking-header h2 {
+    margin: 0;
+    line-height: 1.2;
+}
+
+#provas-milha .table-container,
+#provas-5km .table-container,
+#provas-10km .table-container,
+#provas-meia .table-container,
+#provas-maratona .table-container {
+    width: 1000px;
+    max-width: calc(100% - 60px);
+    margin: -10px auto 30px;
+}
+
+#provas-milha .ranking-table,
+#provas-5km .ranking-table,
+#provas-10km .ranking-table,
+#provas-meia .ranking-table,
+#provas-maratona .ranking-table {
+    width: 100%;
+    min-width: 850px;
+    table-layout: fixed;
+}
+
+#provas-milha .ranking-table th:nth-child(1),
+#provas-milha .ranking-table td:nth-child(1),
+#provas-5km .ranking-table th:nth-child(1),
+#provas-5km .ranking-table td:nth-child(1),
+#provas-10km .ranking-table th:nth-child(1),
+#provas-10km .ranking-table td:nth-child(1),
+#provas-meia .ranking-table th:nth-child(1),
+#provas-meia .ranking-table td:nth-child(1),
+#provas-maratona .ranking-table th:nth-child(1),
+#provas-maratona .ranking-table td:nth-child(1) {
+    width: 110px;
+    white-space: nowrap;
+}
+
+#provas-milha .ranking-table th:nth-child(2),
+#provas-milha .ranking-table td:nth-child(2),
+#provas-5km .ranking-table th:nth-child(2),
+#provas-5km .ranking-table td:nth-child(2),
+#provas-10km .ranking-table th:nth-child(2),
+#provas-10km .ranking-table td:nth-child(2),
+#provas-meia .ranking-table th:nth-child(2),
+#provas-meia .ranking-table td:nth-child(2),
+#provas-maratona .ranking-table th:nth-child(2),
+#provas-maratona .ranking-table td:nth-child(2) {
+    width: 520px;
+}
+
+#provas-milha .ranking-table th:nth-child(3),
+#provas-milha .ranking-table td:nth-child(3),
+#provas-5km .ranking-table th:nth-child(3),
+#provas-5km .ranking-table td:nth-child(3),
+#provas-10km .ranking-table th:nth-child(3),
+#provas-10km .ranking-table td:nth-child(3),
+#provas-meia .ranking-table th:nth-child(3),
+#provas-meia .ranking-table td:nth-child(3),
+#provas-maratona .ranking-table th:nth-child(3),
+#provas-maratona .ranking-table td:nth-child(3) {
+    width: 220px;
+    white-space: nowrap;
+}.ranking-table th,
+.ranking-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: left;
+}
+
+.ranking-table td:first-child,
+.ranking-table th:first-child {
+    white-space: nowrap;
+}
+.ranking-table th {
+    background: #111;
+    color: white;
+}
+
+.ranking-table th:first-child,
+.ranking-table td:first-child {
+    text-align: center;
+    font-weight: bold;
+    width: 70px;
+}
+
+.ranking-table .tempo {
+    font-weight: bold;
+}
+
+.ranking-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+.last-update {
+    text-align: right;
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo div {
+        text-align: center;
+    }
+
+    .logo h1 {
+        font-size: 32px;
+    }
+
+    .logo p {
+        font-size: 20px;
+    }
+
+    nav li {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .ranking-header h2 {
+        font-size: 28px;
+    }
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.hidden {
+    display: none;
+}
+
+
+nav a,
+nav button {
+    background: transparent;
+    border: none;
+    color: white;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav button:hover {
+    color: #ff7a00;
+    text-decoration: none;
+}
+.tempos-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.tempos-container h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.texto-tempos {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.tabelas-tempos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coluna-tempos {
+    flex: 1;
+    min-width: 320px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.coluna-tempos h3 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.masculino h3 {
+    background: #1976d2;
+}
+
+.feminino h3 {
+    background: #e91e63;
+}
+
+.linha-tempo {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.linha-tempo:last-child {
+    border-bottom: none;
+}
+
+.linha-tempo strong {
+    color: #222;
+}
+#milha,
+[id="5km"],
+[id="10km"] {
+    padding-top: 10px;
+}
+
+.ranking-header {
+    margin-top: 0;
+}
+#tempos-limites {
+    padding-top: 10px !important;
+    margin-top: -30px;
+}
+
+#tempos-limites h2 {
+    margin-top: 0;
+}
+#criterios {
+    padding: 25px 30px 40px;
+}
+
+#criterios .ranking-header {
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.criterios-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+}
+
+.criterios-box p {
+    margin: 0 0 18px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.criterios-box p:last-child {
+    margin-bottom: 0;
+}
+#inicio,
+#criterios,
+#tempos-limites,
+#contato {
+    padding-top: 25px;
+}
+
+#tempos-limites {
+    margin-top: 0 !important;
+}
+
+#contato .ranking-header,
+#criterios .ranking-header {
+    margin-top: 0;
+}
+#inicio.hero {
+    padding: 25px 20px !important;
+}
+
+#tempos-limites {
+    padding: 25px 0 0 !important;
+    margin: 0 !important;
+}
+
+#tempos-limites .tempos-container {
+    padding: 0 !important;
+    margin: 0 auto !important;
+}
+#inicio {
+    padding: 25px 20px 45px;
+}
+
+.texto-inicio {
+    margin-bottom: 35px !important;
+}
+
+.destaques-inicio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+    overflow: hidden;
+}
+
+.destaque-inicio {
+    padding: 28px 22px;
+    text-align: center;
+    border-right: 1px solid #e5e5e5;
+}
+
+.destaque-inicio:last-child {
+    border-right: none;
+}
+
+.icone-inicio {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.destaque-inicio h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    color: #111;
+}
+
+.destaque-inicio p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
+
+@media (max-width: 800px) {
+    .destaques-inicio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destaque-inicio:nth-child(2) {
+        border-right: none;
+    }
+
+    .destaque-inicio:nth-child(-n+2) {
+        border-bottom: 1px solid #e5e5e5;
+    }
+}
+
+@media (max-width: 500px) {
+    .destaques-inicio {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-inicio {
+        border-right: none;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .destaque-inicio:last-child {
+        border-bottom: none;
+    }
+}
+#ranking-masculino .ranking-table,
+#ranking-feminino .ranking-table {
+    table-layout: fixed;
+}
+
+#ranking-masculino .ranking-table th:nth-child(1),
+#ranking-masculino .ranking-table td:nth-child(1),
+#ranking-feminino .ranking-table th:nth-child(1),
+#ranking-feminino .ranking-table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+#ranking-masculino .ranking-table th:nth-child(2),
+#ranking-masculino .ranking-table td:nth-child(2),
+#ranking-feminino .ranking-table th:nth-child(2),
+#ranking-feminino .ranking-table td:nth-child(2) {
+    width: 12%;
+}
+
+#ranking-masculino .ranking-table th:nth-child(3),
+#ranking-masculino .ranking-table td:nth-child(3),
+#ranking-feminino .ranking-table th:nth-child(3),
+#ranking-feminino .ranking-table td:nth-child(3) {
+    width: 30%;
+}
+
+#ranking-masculino .ranking-table th:nth-child(4),
+#ranking-masculino .ranking-table td:nth-child(4),
+#ranking-feminino .ranking-table th:nth-child(4),
+#ranking-feminino .ranking-table td:nth-child(4) {
+    width: 27%;
+}
+
+#ranking-masculino .ranking-table th:nth-child(5),
+#ranking-masculino .ranking-table td:nth-child(5),
+#ranking-feminino .ranking-table th:nth-child(5),
+#ranking-feminino .ranking-table td:nth-child(5) {
+    width: 25%;
+}
+#ranking-masculino,
+#ranking-feminino {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+#ranking-5km-masculino .ranking-table,
+#ranking-5km-feminino .ranking-table {
+    table-layout: fixed;
+}
+
+#ranking-5km-masculino .ranking-table th:nth-child(1),
+#ranking-5km-masculino .ranking-table td:nth-child(1),
+#ranking-5km-feminino .ranking-table th:nth-child(1),
+#ranking-5km-feminino .ranking-table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+#ranking-5km-masculino .ranking-table th:nth-child(2),
+#ranking-5km-masculino .ranking-table td:nth-child(2),
+#ranking-5km-feminino .ranking-table th:nth-child(2),
+#ranking-5km-feminino .ranking-table td:nth-child(2) {
+    width: 12%;
+}
+
+#ranking-5km-masculino .ranking-table th:nth-child(3),
+#ranking-5km-masculino .ranking-table td:nth-child(3),
+#ranking-5km-feminino .ranking-table th:nth-child(3),
+#ranking-5km-feminino .ranking-table td:nth-child(3) {
+    width: 30%;
+}
+
+#ranking-5km-masculino .ranking-table th:nth-child(4),
+#ranking-5km-masculino .ranking-table td:nth-child(4),
+#ranking-5km-feminino .ranking-table th:nth-child(4),
+#ranking-5km-feminino .ranking-table td:nth-child(4) {
+    width: 27%;
+}
+
+#ranking-5km-masculino .ranking-table th:nth-child(5),
+#ranking-5km-masculino .ranking-table td:nth-child(5),
+#ranking-5km-feminino .ranking-table th:nth-child(5),
+#ranking-5km-feminino .ranking-table td:nth-child(5) {
+    width: 25%;
+}
+
+#ranking-5km-masculino,
+#ranking-5km-feminino {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+#ranking-10km-masculino .ranking-table,
+#ranking-10km-feminino .ranking-table {
+    table-layout: fixed;
+}
+
+#ranking-10km-masculino .ranking-table th:nth-child(1),
+#ranking-10km-masculino .ranking-table td:nth-child(1),
+#ranking-10km-feminino .ranking-table th:nth-child(1),
+#ranking-10km-feminino .ranking-table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+#ranking-10km-masculino .ranking-table th:nth-child(2),
+#ranking-10km-masculino .ranking-table td:nth-child(2),
+#ranking-10km-feminino .ranking-table th:nth-child(2),
+#ranking-10km-feminino .ranking-table td:nth-child(2) {
+    width: 12%;
+}
+
+#ranking-10km-masculino .ranking-table th:nth-child(3),
+#ranking-10km-masculino .ranking-table td:nth-child(3),
+#ranking-10km-feminino .ranking-table th:nth-child(3),
+#ranking-10km-feminino .ranking-table td:nth-child(3) {
+    width: 30%;
+}
+
+#ranking-10km-masculino .ranking-table th:nth-child(4),
+#ranking-10km-masculino .ranking-table td:nth-child(4),
+#ranking-10km-feminino .ranking-table th:nth-child(4),
+#ranking-10km-feminino .ranking-table td:nth-child(4) {
+    width: 27%;
+}
+
+#ranking-10km-masculino .ranking-table th:nth-child(5),
+#ranking-10km-masculino .ranking-table td:nth-child(5),
+#ranking-10km-feminino .ranking-table th:nth-child(5),
+#ranking-10km-feminino .ranking-table td:nth-child(5) {
+    width: 25%;
+}
+
+#ranking-10km-masculino,
+#ranking-10km-feminino {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+#ranking-meia-masculino .ranking-table,
+#ranking-meia-feminino .ranking-table {
+    table-layout: fixed;
+}
+
+#ranking-meia-masculino .ranking-table th:nth-child(1),
+#ranking-meia-masculino .ranking-table td:nth-child(1),
+#ranking-meia-feminino .ranking-table th:nth-child(1),
+#ranking-meia-feminino .ranking-table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+#ranking-meia-masculino .ranking-table th:nth-child(2),
+#ranking-meia-masculino .ranking-table td:nth-child(2),
+#ranking-meia-feminino .ranking-table th:nth-child(2),
+#ranking-meia-feminino .ranking-table td:nth-child(2) {
+    width: 12%;
+}
+
+#ranking-meia-masculino .ranking-table th:nth-child(3),
+#ranking-meia-masculino .ranking-table td:nth-child(3),
+#ranking-meia-feminino .ranking-table th:nth-child(3),
+#ranking-meia-feminino .ranking-table td:nth-child(3) {
+    width: 30%;
+}
+
+#ranking-meia-masculino .ranking-table th:nth-child(4),
+#ranking-meia-masculino .ranking-table td:nth-child(4),
+#ranking-meia-feminino .ranking-table th:nth-child(4),
+#ranking-meia-feminino .ranking-table td:nth-child(4) {
+    width: 27%;
+}
+
+#ranking-meia-masculino .ranking-table th:nth-child(5),
+#ranking-meia-masculino .ranking-table td:nth-child(5),
+#ranking-meia-feminino .ranking-table th:nth-child(5),
+#ranking-meia-feminino .ranking-table td:nth-child(5) {
+    width: 25%;
+}
+
+#ranking-meia-masculino,
+#ranking-meia-feminino {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+#meia .ranking-header {
+    padding-top: 12px;
+}
+#ranking-maratona-masculino .ranking-table,
+#ranking-maratona-feminino .ranking-table {
+    table-layout: fixed;
+}
+
+#ranking-maratona-masculino .ranking-table th:nth-child(1),
+#ranking-maratona-masculino .ranking-table td:nth-child(1),
+#ranking-maratona-feminino .ranking-table th:nth-child(1),
+#ranking-maratona-feminino .ranking-table td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+#ranking-maratona-masculino .ranking-table th:nth-child(2),
+#ranking-maratona-masculino .ranking-table td:nth-child(2),
+#ranking-maratona-feminino .ranking-table th:nth-child(2),
+#ranking-maratona-feminino .ranking-table td:nth-child(2) {
+    width: 12%;
+}
+
+#ranking-maratona-masculino .ranking-table th:nth-child(3),
+#ranking-maratona-masculino .ranking-table td:nth-child(3),
+#ranking-maratona-feminino .ranking-table th:nth-child(3),
+#ranking-maratona-feminino .ranking-table td:nth-child(3) {
+    width: 30%;
+}
+
+#ranking-maratona-masculino .ranking-table th:nth-child(4),
+#ranking-maratona-masculino .ranking-table td:nth-child(4),
+#ranking-maratona-feminino .ranking-table th:nth-child(4),
+#ranking-maratona-feminino .ranking-table td:nth-child(4) {
+    width: 27%;
+}
+
+#ranking-maratona-masculino .ranking-table th:nth-child(5),
+#ranking-maratona-masculino .ranking-table td:nth-child(5),
+#ranking-maratona-feminino .ranking-table th:nth-child(5),
+#ranking-maratona-feminino .ranking-table td:nth-child(5) {
+    width: 25%;
+}
+
+#ranking-maratona-masculino,
+#ranking-maratona-feminino {
+    width: 1100px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#maratona .ranking-header {
+    padding-top: 12px;
+}
+.bandeira-br {
+    display: inline-block;
+    width: 34px;
+    height: 23px;
+    background: #009c3b;
+    position: relative;
+    border-radius: 2px;
+}
+
+.bandeira-br::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ffdf00;
+    top: 3.5px;
+    left: 9px;
+    transform: rotate(45deg);
+}
+
+.bandeira-br::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #002776;
+    border-radius: 50%;
+    top: 6.5px;
+    left: 12px;
+}

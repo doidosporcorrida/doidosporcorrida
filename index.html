@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking DPC de Corrida de Rua</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+    <img src="images/logo-dpc.png" alt="Logo Doidos por Corrida">
+
+    <div>
+        <h1>Doidos por Corrida</h1>
+        <p>Ranking DPC de Corrida de Rua</p>
+            </div>
+</div>
+
+    <nav>
+<ul>
+    <li><button onclick="mostrarSecao('inicio')">Início</button></li>
+    <li><button onclick="mostrarSecao('ranking')">Ranking DPC</button></li>
+    <li><button onclick="mostrarSecao('provas')">Provas do Brasil</button></li>
+    <li><button onclick="mostrarSecao('criterios')">Critérios</button></li>
+    <li><button onclick="mostrarSecao('tempos')">Tempos Limites</button></li>
+    <li><button onclick="mostrarSecao('contato')">Contato</button></li>
+</ul>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+
+    <h2>Ranking DPC</h2>
+
+    <p class="texto-inicio">
+        Os melhores resultados de atletas brasileiros em provas presentes no calendário global da World Athletics.
+    </p>
+
+    <div class="destaques-inicio">
+
+        <div class="destaque-inicio">
+            <div class="icone-inicio">🏆</div>
+            <h3>Ranking DPC</h3>
+            <p>Os melhores resultados dos atletas brasileiros.</p>
+        </div>
+
+        <div class="destaque-inicio">
+            <div class="icone-inicio">📈</div>
+            <h3>Atualizado</h3>
+            <p>Ranking atualizado após novas provas válidas.</p>
+        </div>
+
+        <div class="destaque-inicio">
+            <div class="icone-inicio">🛡️</div>
+            <h3>Transparente</h3>
+            <p>Critérios públicos e iguais para todos.</p>
+        </div>
+
+        <div class="destaque-inicio">
+            <div class="icone-inicio"><span class="bandeira-br"></span></div>
+            <h3>100% Brasileiro</h3>
+            <p>Exclusivo para atletas brasileiros.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="cards" id="provas" style="display: none;">
+
+    <div class="card" onclick="mostrarSecao('provas-milha')">
+        <h3>Milha</h3>
+    </div>
+
+    <div class="card" onclick="mostrarSecao('provas-5km')">
+        <h3>5km</h3>
+    </div>
+
+    <div class="card" onclick="mostrarSecao('provas-10km')">
+        <h3>10km</h3>
+    </div>
+
+    <div class="card" onclick="mostrarSecao('provas-meia')">
+        <h3>Meia Maratona</h3>
+    </div>
+
+    <div class="card" onclick="mostrarSecao('provas-maratona')">
+        <h3>Maratona</h3>
+    </div>
+
+</section>
+<section class="cards" id="ranking" style="display: none;">
+
+    <div class="card" onclick="mostrarSecao('milha')">
+    <h3>Milha</h3>
+</div>
+
+<div class="card" onclick="mostrarSecao('5km')">
+    <h3>5km</h3>
+</div>
+
+<div class="card" onclick="mostrarSecao('10km')">
+    <h3>10km</h3>
+</div>
+
+<div class="card" onclick="mostrarSecao('meia')">
+    <h3>Meia Maratona</h3>
+</div>
+
+<div class="card" onclick="mostrarSecao('maratona')">
+    <h3>Maratona</h3>
+</div>
+
+</section>
+<section id="criterios" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Critérios</h2>
+        <p>Regras utilizadas para compor o Ranking Brasileiro DPC.</p>
+    </section>
+
+    <div class="criterios-box">
+        <p>
+            <p>O Ranking DPC reúne os melhores resultados de atletas brasileiros nas distâncias de milha, 5km, 10km, meia maratona e maratona.</p>
+
+<p>São consideradas apenas marcas obtidas em provas presentes no <strong>calendário global da World Athletics</strong>, realizadas no Brasil ou em qualquer outro país.</p>
+
+<p>Para integrar o ranking, o atleta deve atender ao tempo limite estabelecido para a respectiva distância.</p>
+
+<p><strong>Não serão aceitas passagens ou parciais de provas.</strong> Serão consideradas apenas marcas obtidas na distância oficial da prova disputada.</p>
+        </p>
+    </div>
+
+</section>
+    <section id="tempos-limites" style="display:none;">
+
+    <div class="tempos-container">
+
+        <h2>Tempos Limites</h2>
+
+        <p class="texto-tempos">
+            Para que o resultado seja elegível ao Ranking DPC, o atleta deve atender ao tempo limite abaixo.
+        </p>
+
+        <div class="tabelas-tempos">
+
+            <div class="coluna-tempos masculino">
+
+                <h3>Masculino</h3>
+
+                <div class="linha-tempo">
+                    <span>Milha</span>
+                    <strong>4:29.99</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>5km</span>
+                    <strong>15:29</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>10km</span>
+                    <strong>31:59</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>Meia Maratona</span>
+                    <strong>1:11:59</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>Maratona</span>
+                    <strong>2:34:59</strong>
+                </div>
+
+            </div>
+
+            <div class="coluna-tempos feminino">
+
+                <h3>Feminino</h3>
+
+                <div class="linha-tempo">
+                    <span>Milha</span>
+                    <strong>5:29.99</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>5km</span>
+                    <strong>18:29</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>10km</span>
+                    <strong>38:29</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>Meia Maratona</span>
+                    <strong>1:24:59</strong>
+                </div>
+
+                <div class="linha-tempo">
+                    <span>Maratona</span>
+                    <strong>2:59:59</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</section>
+
+</section>
+<section id="milha" style="display:none;">
+    <section class="ranking-header">
+        <h2>Ranking DPC - Milha 2026</h2>
+        <p>Ranking Brasileiro DPC de Milha - 2026</p>
+    </section>
+
+    <section class="ranking-controls">
+        <button id="btn-masculino" class="category-button active">Masculino</button>
+        <button id="btn-feminino" class="category-button">Feminino</button>
+    </section>
+
+    <section id="ranking-masculino" class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td>1</td><td class="tempo">4:00.20</td><td>Joelson Pereira Mesquita</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>2</td><td class="tempo">4:05.00</td><td>André Carlos Souza Sales</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>3</td><td class="tempo">4:07.40</td><td>Jean Claudio da Paz Estevez</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>4</td><td class="tempo">4:08.70</td><td>Cicero Cleiton Evangelista Rodrigues</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>5</td><td class="tempo">4:12.00</td><td>Josué Pedocchi de Andrade</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>6</td><td class="tempo">4:12.70</td><td>Lucas Bezerra de Oliveira</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>7</td><td class="tempo">4:12.70</td><td>Jaelisson dos Santos Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">4:14.00</td><td>Ederson Vilela Pereira</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>9</td><td class="tempo">4:14.00</td><td>José Alves da Silva Júnior</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>10</td><td class="tempo">4:16.00</td><td>Leandro Alves Prates</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>11</td><td class="tempo">4:22.20</td><td>Jardel da Silva Paim</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>12</td><td class="tempo">4:22.40</td><td>Ariston Quercio Vieira da Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>13</td><td class="tempo">4:22.50</td><td>Guilherme Santana Orenhas</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>14</td><td class="tempo">4:22.83</td><td>Antônio Silva da Silva</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>15</td><td class="tempo">4:22.96</td><td>Peterson Santos Ribeiro</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>16</td><td class="tempo">4:23.00</td><td>Douglas Coelho da Silva</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>17</td><td class="tempo">4:23.35</td><td>Eduardo Costa da Silva</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>18</td><td class="tempo">4:23.80</td><td>Bryan Nikson Reis Alves</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>19</td><td class="tempo">4:25.20</td><td>Francisco Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>20</td><td class="tempo">4:26.30</td><td>Paulo Samuel da Luz de Siqueira</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">4:26.90</td><td>Fernando Silva Oliveira</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>22</td><td class="tempo">4:27.21</td><td>Wellington Guilherme Santos de Souza</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>23</td><td class="tempo">4:29.50</td><td>Wagner Juan Inácio</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+            </tbody>
+        </table>
+    </section>
+<section id="ranking-feminino" class="table-container hidden">
+<table class="ranking-table">
+
+    <thead>
+        <tr>
+            <th>Pos.</th>
+            <th>Tempo</th>
+            <th>Atleta</th>
+            <th>Local</th>
+            <th>Data</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr><td>1</td><td class="tempo">4:49.53</td><td>Jaqueline Beatriz Weber</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>2</td><td class="tempo">4:52.77</td><td>Flávia Maria de Lima</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>3</td><td class="tempo">4:54.13</td><td>Caroline Alves Dias</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>4</td><td class="tempo">4:56.20</td><td>Antônia Keyla da Silva Barros</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>5</td><td class="tempo">4:56.43</td><td>Esther Santos Barreto</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>6</td><td class="tempo">4:57.00</td><td>July Ferreira da Silva Abrão</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>7</td><td class="tempo">4:57.20</td><td>Camila Wessler Elisio</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">4:58.56</td><td>Isabelle Cristina de Almeida</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>9</td><td class="tempo">5:05.60</td><td>Nayara Borges</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>10</td><td class="tempo">5:08.70</td><td>Lais Dias da Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>11</td><td class="tempo">5:19.40</td><td>Kamila Alexia da Silva Santos</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>12</td><td class="tempo">5:20.58</td><td>Leila Santos da Silva</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>13</td><td class="tempo">5:23.54</td><td>Marta Pereira Reis</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>14</td><td class="tempo">5:25.20</td><td>Jucilene Conceição</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>15</td><td class="tempo">5:28.60</td><td>Bibiane Reis de Almeida</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>16</td><td class="tempo">5:29.00</td><td>Viviane da Cruz Lima</td><td>Campos do Jordão</td><td>14/03/2026</td></tr>
+<tr><td>17</td><td class="tempo">5:29.04</td><td>Livya Kezia Coimbra Leite</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+
+    </tbody>
+
+</table>
+
+</section>
+</section>
+<section id="5km" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Ranking DPC - 5km 2026</h2>
+        <p>Ranking Brasileiro DPC de 5km - 2026</p>
+    </section>
+
+    <section class="ranking-controls">
+        <button id="btn-5km-masculino" class="category-button active">Masculino</button>
+        <button id="btn-5km-feminino" class="category-button">Feminino</button>
+    </section>
+
+    <section id="ranking-5km-masculino" class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td>1</td><td class="tempo">14:06</td><td>Jânio Marcos Varjão</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>2</td><td class="tempo">14:07</td><td>Guilherme Kurtz</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>3</td><td class="tempo">14:09</td><td>Thiago do Rosário André</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>4</td><td class="tempo">14:13</td><td>Vitor Ferreira dos Santos</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>5</td><td class="tempo">14:14</td><td>Walace Evangelista Caldas</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>6</td><td class="tempo">14:16</td><td>Edimar Ferreira de Lira Souza</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>7</td><td class="tempo">14:19</td><td>Juliano de Araújo</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>7</td><td class="tempo">14:19</td><td>Rafael Almeida Silvestre</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>9</td><td class="tempo">14:31</td><td>Gleison da Silva Santos</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>9</td><td class="tempo">14:31</td><td>Mateus Leandro de Alencar</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>11</td><td class="tempo">14:36</td><td>Vinicius de Oliveira Pereira</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>12</td><td class="tempo">14:37</td><td>Jean Cláudio da Paz Esteves</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>13</td><td class="tempo">14:38</td><td>Thiago dos Santos Costa</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>14</td><td class="tempo">14:39</td><td>Emerson Rosa Oliveira</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>15</td><td class="tempo">14:40</td><td>Joelson Pereira Mesquita</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>16</td><td class="tempo">14:46</td><td>Cicero Felix da Silva</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>17</td><td class="tempo">14:48</td><td>Aldair da Silva do Nascimento</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>18</td><td class="tempo">14:51</td><td>Luan Soares do Nascimento</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>19</td><td class="tempo">14:55</td><td>Justino Pedro da Silva</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>20</td><td class="tempo">14:58</td><td>Daniel Nascimento de Melo Santos</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">15:01</td><td>Ariel Natan de Sousa</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>22</td><td class="tempo">15:03</td><td>André dos Santos Santana</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>23</td><td class="tempo">15:06</td><td>André Nascimento da Silva</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>24</td><td class="tempo">15:07</td><td>Jonatam Lima da Silva</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>25</td><td class="tempo">15:08</td><td>Cicero Evandro Ferreira dos Santos</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>26</td><td class="tempo">15:11</td><td>Antonio Silva da Silva</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>27</td><td class="tempo">15:12</td><td>Manoel Moura das Chagas Filho</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>28</td><td class="tempo">15:16</td><td>Alan Ferreira</td><td>Parauapebas</td><td>06/06/2026</td></tr>
+<tr><td>29</td><td class="tempo">15:17</td><td>Alexsandro Conceição Torres</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>29</td><td class="tempo">15:17</td><td>Clemersom Neis</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">15:19</td><td>Carlos Lima</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>32</td><td class="tempo">15:21</td><td>Ricardo de Oliveira Lopes</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>33</td><td class="tempo">15:22</td><td>Arthur Moreira</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>34</td><td class="tempo">15:23</td><td>Jeferson Nunes</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>35</td><td class="tempo">15:27</td><td>Wallason Alves Pereira</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>36</td><td class="tempo">15:29</td><td>André Carlos Souza Sales</td><td>Campos do Jordão</td><td>15/03/2026</td></tr>
+<tr><td>36</td><td class="tempo">15:29</td><td>Elias Neto Fernandes Nazario</td><td>Petrolina</td><td>17/05/2026</td></tr>
+</tbody>
+
+        </table>
+    </section>
+
+    <section id="ranking-5km-feminino" class="table-container hidden">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td>1</td><td class="tempo">16:40</td><td>Simone Ponte Ferraz</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>2</td><td class="tempo">16:44</td><td>Ketlen da Rosa Petry</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>3</td><td class="tempo">16:59</td><td>Vaniclea Moura dos Santos</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>4</td><td class="tempo">17:05</td><td>Kleidiane Barbosa Jardim</td><td>Campo Grande</td><td>04/07/2026</td></tr>
+<tr><td>5</td><td class="tempo">17:10</td><td>Anastacia Rocha Pereira</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>6</td><td class="tempo">17:14</td><td>Raimunda Jesus dos Santos Lima</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>7</td><td class="tempo">17:15</td><td>Daniele da Silva</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">17:15</td><td>Isadora Haubert Leal</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>9</td><td class="tempo">17:23</td><td>Francielly da Silva Marcondes</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>10</td><td class="tempo">17:36</td><td>Jeane Barreto dos Santos</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>11</td><td class="tempo">17:37</td><td>Edinara Regieli dos Santos Sanches</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>12</td><td class="tempo">17:38</td><td>Elisabete dos Santos Batista</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>13</td><td class="tempo">17:45</td><td>Daiana Justino dos Santos</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>14</td><td class="tempo">17:50</td><td>Lais Dias da Silva</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>15</td><td class="tempo">17:56</td><td>Simone Nascimento</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">18:06</td><td>Rosimara Carvalho Barbosa Rodrigues</td><td>Petrolina</td><td>12/07/2026</td></tr>
+<tr><td>17</td><td class="tempo">18:10</td><td>Adenilza Jesus da Cruz Gomes</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>18</td><td class="tempo">18:19</td><td>Isadora Martello Chiesorin</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>19</td><td class="tempo">18:29</td><td>Lucimara Pisniaki</td><td>Florianópolis</td><td>02/05/2026</td></tr>
+<tr><td>19</td><td class="tempo">18:29</td><td>Gessilene Emidio Domingos</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+
+            </tbody>
+
+        </table>
+    </section>
+
+</section>
+<section id="10km" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Ranking DPC - 10km 2026</h2>
+        <p>Ranking Brasileiro DPC de 10km - 2026</p>
+    </section>
+
+    <section class="ranking-controls">
+        <button id="btn-10km-masculino" class="category-button active">Masculino</button>
+        <button id="btn-10km-feminino" class="category-button">Feminino</button>
+    </section>
+
+    <section id="ranking-10km-masculino" class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr><td>1</td><td class="tempo">28:24</td><td>Miguel Lopes Hidalgo</td><td>Laredo (ESP)</td><td>18/04/2026</td></tr>
+<tr><td>2</td><td class="tempo">29:02</td><td>Johnatas de Oliveira Cruz</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>3</td><td class="tempo">29:03</td><td>Daniel Santana de Souza</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>4</td><td class="tempo">29:17</td><td>Wendell Jeronimo Souza</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>5</td><td class="tempo">29:23</td><td>Lucas Paulo Ferreira Barbosa</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>6</td><td class="tempo">29:32</td><td>Fábio Jesus Correia</td><td>Cuiabá</td><td>11/01/2026</td></tr>
+<tr><td>7</td><td class="tempo">29:37</td><td>José Geraldo Ferreira Junior</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>8</td><td class="tempo">29:41</td><td>André Carlos Sousa Sales</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>9</td><td class="tempo">29:41</td><td>Fernando Augusto Rodrigues da Silva</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>10</td><td class="tempo">29:47</td><td>Jânio Marcos Gonçalves Varjão</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>11</td><td class="tempo">30:01</td><td>Ronald Jefferson de Arruda Lopes</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>12</td><td class="tempo">30:15</td><td>Edimar Ferreira de Lira Souza</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>13</td><td class="tempo">30:22</td><td>Rafael Felipe Gomes Caldeira</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>14</td><td class="tempo">30:23</td><td>Kauã Vargas Magalhães</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>15</td><td class="tempo">30:29</td><td>Gilmar Silvestre Lopes</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">30:30</td><td>Altobeli Santos da Silva</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>17</td><td class="tempo">30:30</td><td>André Alberi de Santana</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>18</td><td class="tempo">30:38</td><td>Flávio Henrique Guimarães Andrade</td><td>Laredo (ESP)</td><td>18/04/2026</td></tr>
+<tr><td>19</td><td class="tempo">30:38</td><td>João Marcos Carvalho da Silva Soares</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>20</td><td class="tempo">30:44</td><td>Bruno da Silva Santos do Nascimento</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>21</td><td class="tempo">30:48</td><td>Pablo Fagundes da Costa</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>22</td><td class="tempo">30:50</td><td>Ronan Moraes da Silva</td><td>Cuiabá</td><td>11/01/2026</td></tr>
+<tr><td>23</td><td class="tempo">30:52</td><td>Glenilson Gilbert de Carvalho</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>24</td><td class="tempo">30:53</td><td>Ederson Vilela Pereira</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>25</td><td class="tempo">30:54</td><td>Gustavo Barros de Souza</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>26</td><td class="tempo">30:55</td><td>Melquisedeque Messias Ribeiro</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>27</td><td class="tempo">30:58</td><td>Jamil Ditzel da Paixão</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>28</td><td class="tempo">31:06</td><td>Kayo Átila Boaventura Gonçalves</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>29</td><td class="tempo">31:06</td><td>Rafael Leoncio da Silva</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>30</td><td class="tempo">31:09</td><td>Edmilson dos Reis Santana</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">31:20</td><td>Rafael dos Santos Novais</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>32</td><td class="tempo">31:22</td><td>Jhenniffer Raissa Bueno da Silva</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>33</td><td class="tempo">31:25</td><td>Cezidio Alves Rodrigues Neto</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>34</td><td class="tempo">31:25</td><td>Vinicius de Carvalho Alves</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>35</td><td class="tempo">31:27</td><td>Josué Pedocchi de Andrade</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>36</td><td class="tempo">31:27</td><td>Matheus Xavier de Souza</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>37</td><td class="tempo">31:28</td><td>Vitor Ferreira dos Santos</td><td>Cuiabá</td><td>11/01/2026</td></tr>
+<tr><td>38</td><td class="tempo">31:29</td><td>Jeferson Nunes de Freitas</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>39</td><td class="tempo">31:30</td><td>Cicero Felix da Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>40</td><td class="tempo">31:32</td><td>Vitor de Oliveira Langa</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>41</td><td class="tempo">31:34</td><td>Alexandre Ribeiro Pastorello</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>42</td><td class="tempo">31:41</td><td>Diego Henrique de Oliveira Silva</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>43</td><td class="tempo">31:41</td><td>Michael de Paula Passos</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>44</td><td class="tempo">31:46</td><td>Alex Sandro Moreira</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>45</td><td class="tempo">31:54</td><td>Ademir de Oliveira</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>46</td><td class="tempo">31:54</td><td>Alex Ivo de Aguiar</td><td>Santos</td><td>17/05/2026</td></tr>
+</tbody>
+
+        </table>
+    </section>
+
+    <section id="ranking-10km-feminino" class="table-container hidden">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr><td>1</td><td class="tempo">32:17</td><td>Nubia de Oliveira Silva</td><td>Laredo (ESP)</td><td>18/04/2026</td></tr>
+<tr><td>2</td><td class="tempo">33:34</td><td>Tatiane Raquel da Silva</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>3</td><td class="tempo">34:33</td><td>Antônia Keyla da Silva Barros</td><td>Ponta Delgada (POR)</td><td>12/04/2026</td></tr>
+<tr><td>4</td><td class="tempo">34:45</td><td>Maria Lucineida da Silva Moreira</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>5</td><td class="tempo">35:03</td><td>Maria Aparecida Ferraz Salgado</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>6</td><td class="tempo">35:05</td><td>Jenifer do Nascimento Silva</td><td>Rio de Janeiro</td><td>05/06/2026</td></tr>
+<tr><td>7</td><td class="tempo">35:08</td><td>Kleidiane Barbosa Jardim</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">35:15</td><td>Glaucielle de Oliveira de Souza</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>9</td><td class="tempo">35:22</td><td>Larissa Marcelle Moreira Quintão</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>10</td><td class="tempo">35:27</td><td>Carmem Silva Reges Pereira</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>11</td><td class="tempo">35:49</td><td>Simone Ponte Ferraz</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>12</td><td class="tempo">35:50</td><td>Rejane Ester Bispo da Silva</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>13</td><td class="tempo">35:59</td><td>Regiane Braga de Souza</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>14</td><td class="tempo">36:09</td><td>Franciele Monalisa dos Santos Firme</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>15</td><td class="tempo">36:16</td><td>Susane de Araújo Martins</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">36:27</td><td>Jaciane Barroso de Jesus</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">36:27</td><td>Marina Paula Basilio Pires</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>18</td><td class="tempo">36:44</td><td>Ketlen da Rosa Petry</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>19</td><td class="tempo">36:50</td><td>Fabricia Ester Stedille</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>20</td><td class="tempo">36:56</td><td>Mirlene da Silva dos Santos</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>21</td><td class="tempo">36:58</td><td>Helen Spadari</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>22</td><td class="tempo">37:02</td><td>Keyla Silva Lisboa</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>23</td><td class="tempo">37:06</td><td>Alice Yuri Lima Fonseca</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>24</td><td class="tempo">37:17</td><td>Thalya Hillebrant</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>25</td><td class="tempo">37:19</td><td>Elisabete dos Santos</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>26</td><td class="tempo">37:20</td><td>Jackeline Araújo Ferreira</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>27</td><td class="tempo">37:23</td><td>Isadora Martello</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>28</td><td class="tempo">37:27</td><td>Ana Laura Rios Domingues</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>29</td><td class="tempo">37:30</td><td>Esther Santos Barreto</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>30</td><td class="tempo">37:39</td><td>Renata Moreno dos Santos</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">37:41</td><td>Ana Caratina Amancio de Oliveira</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">37:41</td><td>Gabriela de Freitas Tardivo</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>33</td><td class="tempo">37:42</td><td>Emille Laize Pereira Santos</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>33</td><td class="tempo">37:42</td><td>Nayara Oliveira</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>35</td><td class="tempo">37:45</td><td>Lidiane Batista dos Santos</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>36</td><td class="tempo">37:46</td><td>Luiz Cravo de Azevedo</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>37</td><td class="tempo">37:47</td><td>Patricia Miranda Rodrigues Martins</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>38</td><td class="tempo">37:55</td><td>Luana Alessandra Quirino</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>39</td><td class="tempo">37:56</td><td>Raisa Marcelino do Nascimento</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>40</td><td class="tempo">37:59</td><td>Manuela Rodrigues Barbosa</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>41</td><td class="tempo">38:00</td><td>Raquel Aparecida Pereira</td><td>São Paulo</td><td>31/05/2026</td></tr>
+<tr><td>42</td><td class="tempo">38:03</td><td>Luana Alessandra Quirino</td><td>Santos</td><td>17/05/2026</td></tr>
+<tr><td>43</td><td class="tempo">38:08</td><td>Naiticyanne Soares da Rosa</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>44</td><td class="tempo">38:10</td><td>Clara Guimarães Lara de Carvalho</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>45</td><td class="tempo">38:28</td><td>Andréa Zamith</td><td>Aix-les-Bains (FRA)</td><td>17/05/2026</td></tr>
+
+            </tbody>
+
+        </table>
+    </section>
+
+</section>
+<section id="meia" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Ranking DPC - Meia Maratona 2026</h2>
+        <p>Ranking Brasileiro DPC de Meia Maratona - 2026</p>
+    </section>
+
+    <section class="ranking-controls">
+        <button id="btn-meia-masculino" class="category-button active">Masculino</button>
+        <button id="btn-meia-feminino" class="category-button">Feminino</button>
+    </section>
+
+    <section id="ranking-meia-masculino" class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr><td>1</td><td class="tempo">1:01:53</td><td>Fábio Jesus Correia</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>2</td><td class="tempo">1:02:14</td><td>Giovani dos Santos</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>3</td><td class="tempo">1:03:12</td><td>Wendell Jeronimo Souza</td><td>Milano (ITA)</td><td>03/05/2026</td></tr>
+<tr><td>4</td><td class="tempo">1:03:38</td><td>Walace Evangelista Caldas</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>5</td><td class="tempo">1:03:45</td><td>Lucas Paulo Ferreira Barboza</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>6</td><td class="tempo">1:04:38</td><td>Fernando Augusto Rodrigues da Silva</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>7</td><td class="tempo">1:04:51</td><td>Maicon Douglas da Silva Mancuso</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">1:04:53</td><td>Daniel Santana de Souza</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>9</td><td class="tempo">1:04:54</td><td>José Geraldo Ferreira Junior</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>10</td><td class="tempo">1:05:08</td><td>João Marcos Carvalho da Silva Soares</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>11</td><td class="tempo">1:05:14</td><td>Gilmar Silvestre Lopes</td><td>Belo Horizonte</td><td>28/06/2026</td></tr>
+<tr><td>12</td><td class="tempo">1:05:24</td><td>Johnatas de Oliveira Cruz</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>13</td><td class="tempo">1:05:48</td><td>Ronald Jefferson de Arruda Lopes</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>14</td><td class="tempo">1:06:01</td><td>Émerson Rosa Oliveira</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>15</td><td class="tempo">1:06:08</td><td>João Marcos Santos Ferreira</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>16</td><td class="tempo">1:06:11</td><td>Justino Pedro da Silva</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>17</td><td class="tempo">1:06:16</td><td>Melquisedeque Messias Ribeiro</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>18</td><td class="tempo">1:06:35</td><td>Deivid da Silva Nunes</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>19</td><td class="tempo">1:06:38</td><td>Lucas Alves Andrade</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>20</td><td class="tempo">1:06:41</td><td>Vagner da Silva Noronha</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">1:06:47</td><td>Edelson de Ávila Almeida</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">1:06:47</td><td>Fábio Rodrigues de Souza Cordeiro</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>23</td><td class="tempo">1:06:48</td><td>Givaldo Araújo Sena</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>24</td><td class="tempo">1:06:54</td><td>Paulo Roberto de Almeida Paula</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>25</td><td class="tempo">1:07:02</td><td>Leonardo Santana de Olinda</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>26</td><td class="tempo">1:07:03</td><td>Carlos Henrique de Souza</td><td>Murcia (ESP)</td><td>01/02/2026</td></tr>
+<tr><td>27</td><td class="tempo">1:07:07</td><td>Bruno Alves da Silva</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>28</td><td class="tempo">1:07:33</td><td>Gabriel Alves Pozzo</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>29</td><td class="tempo">1:07:36</td><td>Miguel Morone Neto</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>30</td><td class="tempo">1:07:46</td><td>Everton Silva Lima</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">1:07:52</td><td>Allison Rocha Peres</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>32</td><td class="tempo">1:07:55</td><td>Flávio Henrique Guimarães Andrade</td><td>Berlin (ALE)</td><td>29/03/2026</td></tr>
+<tr><td>33</td><td class="tempo">1:07:59</td><td>Lucas Simões de Oliveira</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>34</td><td class="tempo">1:08:04</td><td>Luiz Márcio Ramos Soares</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>35</td><td class="tempo">1:08:06</td><td>Naisson Nidgie da Silva Pinheiro</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>36</td><td class="tempo">1:08:07</td><td>Kayo Átila Boaventura Gonçalves</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>37</td><td class="tempo">1:08:08</td><td>Leonardo Willrich Padilha Padovany</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>38</td><td class="tempo">1:08:19</td><td>Clayton Elias Gomes</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>39</td><td class="tempo">1:08:20</td><td>Rafael Leôncio da Silva</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>40</td><td class="tempo">1:08:21</td><td>Ademir de Oliveira</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>40</td><td class="tempo">1:08:21</td><td>Gleison da Silva Santos</td><td>Salvador</td><td>24/04/2026</td></tr>
+<tr><td>42</td><td class="tempo">1:08:28</td><td>Júlio Monteiro Martins</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>43</td><td class="tempo">1:08:34</td><td>Hiago Silva de Oliveira Silva</td><td>Campo Grande</td><td>05/07/2026</td></tr>
+<tr><td>44</td><td class="tempo">1:08:35</td><td>Denis Santana Vera</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>45</td><td class="tempo">1:08:36</td><td>Luan Bissoli</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>46</td><td class="tempo">1:08:38</td><td>Kauã Mendes Firmino</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>46</td><td class="tempo">1:08:38</td><td>Mateus Alessandro Dias Rocha</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>48</td><td class="tempo">1:08:42</td><td>Willdeberg Claudino dos Santos</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>49</td><td class="tempo">1:08:43</td><td>Felipe Borges Petersen</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>50</td><td class="tempo">1:08:47</td><td>Renato Alves Souza</td><td>Parauapebas</td><td>07/06/2026</td></tr>
+<tr><td>51</td><td class="tempo">1:08:58</td><td>Antônio Marco Pereira de Araújo</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>52</td><td class="tempo">1:09:04</td><td>José Maria Arruda de Almeida</td><td>Parauapebas</td><td>07/06/2026</td></tr>
+<tr><td>53</td><td class="tempo">1:09:10</td><td>André da Conceição Santos</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>54</td><td class="tempo">1:09:22</td><td>Gabriel Ferreira Silva</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>55</td><td class="tempo">1:09:23</td><td>Michael de Paula Passos</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>55</td><td class="tempo">1:09:23</td><td>Jeronimo Santana de Aguiar</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>57</td><td class="tempo">1:09:24</td><td>Josiel Vergara</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>58</td><td class="tempo">1:09:25</td><td>Daniel Nascimento de Melo</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>58</td><td class="tempo">1:09:25</td><td>Douglas Coelho da Silva</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>60</td><td class="tempo">1:09:27</td><td>Deivid da Silva Nuves</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>61</td><td class="tempo">1:09:27</td><td>Laurindo Nunes Neto</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>62</td><td class="tempo">1:09:31</td><td>Glenison Gilbert de Carvalho</td><td>Campo Grande</td><td>05/07/2026</td></tr>
+<tr><td>63</td><td class="tempo">1:09:40</td><td>Silvan dos Santos</td><td>João Pessoa</td><td>01/08/2026</td></tr>
+<tr><td>64</td><td class="tempo">1:09:52</td><td>Rodrigo Dantas</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>65</td><td class="tempo">1:10:06</td><td>Jurandyr Couto Junior</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>66</td><td class="tempo">1:10:07</td><td>Willian Muraro da Silva</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>67</td><td class="tempo">1:10:09</td><td>Matheus Martins Claudiano</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>68</td><td class="tempo">1:10:13</td><td>Clemersom Neis</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>69</td><td class="tempo">1:10:14</td><td>Mateus Gomez Sacchett</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>70</td><td class="tempo">1:10:15</td><td>Caio Aexandre Rodrigues</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>71</td><td class="tempo">1:10:20</td><td>Pedro Filho</td><td>Aveiro (POR)</td><td>26/04/2026</td></tr>
+<tr><td>71</td><td class="tempo">1:10:20</td><td>Rafael dos Santos Novais</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>73</td><td class="tempo">1:10:23</td><td>Matheus Da Silva</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>74</td><td class="tempo">1:10:24</td><td>Gilson de Souza</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>75</td><td class="tempo">1:10:25</td><td>Matheus Martins</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>76</td><td class="tempo">1:10:27</td><td>Alequessandro Paula da Silva</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>76</td><td class="tempo">1:10:27</td><td>Renato Ferreira Cirino</td><td>Navegantes</td><td>16/08/2026</td></tr>
+<tr><td>78</td><td class="tempo">1:10:30</td><td>Paulo Henrique Tumelero</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>79</td><td class="tempo">1:10:34</td><td>Izaias Vidal</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>80</td><td class="tempo">1:10:35</td><td>André da Silva Fernandes</td><td>Maceió</td><td>01/08/2026</td></tr>
+<tr><td>81</td><td class="tempo">1:10:36</td><td>Aneilton Silva do Nascimento</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>82</td><td class="tempo">1:10:37</td><td>Thales Vieira</td><td>Gold Coast (AUS)</td><td>04/07/2026</td></tr>
+<tr><td>83</td><td class="tempo">1:10:46</td><td>Anailton Santos Diego</td><td>Salvador</td><td>24/04/2026</td></tr>
+<tr><td>83</td><td class="tempo">1:10:46</td><td>Diego Henrique de Oliveira Silva</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>85</td><td class="tempo">1:10:46</td><td>Lucas Brandalise</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>86</td><td class="tempo">1:10:47</td><td>Henrique Nobrega</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>87</td><td class="tempo">1:10:49</td><td>Paulo Samuel da Luz Siqueira</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>87</td><td class="tempo">1:10:49</td><td>Jefferson Coradette</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>89</td><td class="tempo">1:10:53</td><td>Renan Barckfeld Correia</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>90</td><td class="tempo">1:10:56</td><td>Jamal Soufane</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>91</td><td class="tempo">1:10:57</td><td>Altobeli Santos da Silva</td><td>Ribeirao Preto</td><td>19/07/2026</td></tr>
+<tr><td>92</td><td class="tempo">1:10:59</td><td>Vanilson Neves</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>93</td><td class="tempo">1:11:02</td><td>Alexandre Ribeiro Pastorello</td><td>Ribeirao Preto</td><td>19/07/2026</td></tr>
+<tr><td>94</td><td class="tempo">1:11:09</td><td>Lucas Vinicius Martins</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>95</td><td class="tempo">1:11:10</td><td>Adriel Gomes da Hora</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>95</td><td class="tempo">1:11:10</td><td>Alex Ivo de Aguiar</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>95</td><td class="tempo">1:11:10</td><td>Cristian Lucian Genuino da Silva</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>95</td><td class="tempo">1:11:10</td><td>Gustavo Luiz da Silva</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>99</td><td class="tempo">1:11:13</td><td>Deivid do Carmo Oliveira</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>99</td><td class="tempo">1:11:13</td><td>Rodrigo de Souza Lobo</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>101</td><td class="tempo">1:11:18</td><td>Thiago Lopes de Sousa</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>102</td><td class="tempo">1:11:20</td><td>Jair Haskel</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>103</td><td class="tempo">1:11:22</td><td>André Luís Magalhães Fernandes</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>104</td><td class="tempo">1:11:23</td><td>André Nascimento da Silva</td><td>João Pessoa</td><td>01/08/2026</td></tr>
+<tr><td>104</td><td class="tempo">1:11:23</td><td>Manoel Rafael Anselmo Pereira</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>106</td><td class="tempo">1:11:27</td><td>Guilherme Henrique Cibene</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>107</td><td class="tempo">1:11:28</td><td>Fernando Vasque</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>108</td><td class="tempo">1:11:31</td><td>Renzo França Pereira da Silva</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>108</td><td class="tempo">1:11:31</td><td>Rosivaldo Moreira da Silva</td><td>Parauapebas</td><td>07/06/2026</td></tr>
+<tr><td>110</td><td class="tempo">1:11:32</td><td>Alex Sandro Nogueira</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>111</td><td class="tempo">1:11:37</td><td>Valmir Martins</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>112</td><td class="tempo">1:11:42</td><td>William Correa</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>113</td><td class="tempo">1:11:43</td><td>Daniel Silva de Oliveira</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>114</td><td class="tempo">1:11:49</td><td>Felipe Mapelli Antunes</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>114</td><td class="tempo">1:11:49</td><td>João Pedro Encarnação de Amorim</td><td>Salvador</td><td>26/04/2026</td></tr>
+<tr><td>114</td><td class="tempo">1:11:49</td><td>Luis Antunes</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>117</td><td class="tempo">1:11:51</td><td>Ananias Gabriel Borges</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>118</td><td class="tempo">1:11:53</td><td>Bruno Heinrich da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>119</td><td class="tempo">1:11:55</td><td>Vitor Bueno de Oliveira</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+            </tbody>
+
+        </table>
+    </section>
+<section id="ranking-meia-feminino" class="table-container hidden">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr><td>1</td><td class="tempo">1:15:45</td><td>Maria Lucineida da Silva</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>2</td><td class="tempo">1:16:36</td><td>Tatiane Raquel da Silva</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>3</td><td class="tempo">1:16:41</td><td>Amanda Aparecida de Oliveira</td><td>São Paulo</td><td>17/05/2026</td></tr>
+<tr><td>4</td><td class="tempo">1:16:52</td><td>Jéssica Ladeira Soares</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>5</td><td class="tempo">1:16:54</td><td>Núbia de Oliveira Silva</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>6</td><td class="tempo">1:16:57</td><td>Ana Catarina Amancio de Oliveira</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>7</td><td class="tempo">1:17:01</td><td>Carmem Silva Reges Pereira</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>8</td><td class="tempo">1:17:21</td><td>Alice Yuri Lima Fonseca</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>9</td><td class="tempo">1:17:38</td><td>Larissa Marcelle Moreira Quintão</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>10</td><td class="tempo">1:17:44</td><td>Regiane Braga de Souza</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>11</td><td class="tempo">1:17:48</td><td>Fabricia Ester Stedille</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>12</td><td class="tempo">1:17:53</td><td>Mirela Saturnino de Andrade</td><td>Petrolina</td><td>17/05/2026</td></tr>
+<tr><td>13</td><td class="tempo">1:18:19</td><td>Ana Laura Rios Domingues</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>14</td><td class="tempo">1:19:17</td><td>Helen Sadari</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>15</td><td class="tempo">1:19:22</td><td>Andréia Aparecida Hessel</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">1:19:23</td><td>Jaciane Barroso Araújo</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>17</td><td class="tempo">1:19:24</td><td>Rejane Ester Bispo da Silva</td><td>Rio de Janeiro</td><td>12/07/2026</td></tr>
+<tr><td>18</td><td class="tempo">1:19:29</td><td>Glauciele de Oliveira de Souza</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>19</td><td class="tempo">1:19:33</td><td>Vaniclea Moura dos Santos</td><td>Salvador</td><td>26/04/2026</td></tr>
+<tr><td>20</td><td class="tempo">1:19:34</td><td>Mariana Pontes Villa Luchezi</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">1:19:36</td><td>Wenderly Dayane Gomes da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>22</td><td class="tempo">1:19:42</td><td>Kleidiane Barbosa Jardim</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>23</td><td class="tempo">1:19:58</td><td>Anastacia Rocha Pereira</td><td>João Pessoa</td><td>01/08/2026</td></tr>
+<tr><td>24</td><td class="tempo">1:20:12</td><td>Isabel Priscila de Lima Vieira</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>25</td><td class="tempo">1:20:39</td><td>Mariana Aparecida dos Santos</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>26</td><td class="tempo">1:21:16</td><td>Luana Sales Paula</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>27</td><td class="tempo">1:21:17</td><td>Beatriz Neres Orzechowski</td><td>Navegantes</td><td>16/08/2026</td></tr>
+<tr><td>28</td><td class="tempo">1:21:21</td><td>Carla de Almeida</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>29</td><td class="tempo">1:21:38</td><td>Bruna Franciele Weber</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>30</td><td class="tempo">1:21:42</td><td>Érica da Silva Camargo</td><td>Nova York (USA)</td><td>21/03/2026</td></tr>
+<tr><td>31</td><td class="tempo">1:21:47</td><td>Thais Gusmão</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>32</td><td class="tempo">1:21:48</td><td>Keyla da Silva Lisboa</td><td>Ribeirão Preto</td><td>19/07/2026</td></tr>
+<tr><td>33</td><td class="tempo">1:22:04</td><td>Vitória Rezende Amaro Gomes</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>34</td><td class="tempo">1:22:12</td><td>Najara Cristina Louzada Siqueira</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>35</td><td class="tempo">1:22:17</td><td>Aimee Motta Souza</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>36</td><td class="tempo">1:22:21</td><td>Natalie Raquel Lopez Dayan</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>37</td><td class="tempo">1:22:24</td><td>Juliana Markan</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>38</td><td class="tempo">1:22:28</td><td>Rosangela Costa Muniz</td><td>Parauapebas</td><td>07/06/2026</td></tr>
+<tr><td>39</td><td class="tempo">1:22:43</td><td>Tatiana Rodrigues Fernandes</td><td>Ribeirão Preto</td><td>19/07/2026</td></tr>
+<tr><td>40</td><td class="tempo">1:22:50</td><td>Edna Maria de Almeida</td><td>Ribeirão Preto</td><td>19/07/2026</td></tr>
+<tr><td>41</td><td class="tempo">1:22:56</td><td>Mariana Ramos de Sousa</td><td>Rio de Janeiro</td><td>16/08/2026</td></tr>
+<tr><td>42</td><td class="tempo">1:22:58</td><td>Gabriela Rodrigues Mattos Chammas</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>43</td><td class="tempo">1:23:01</td><td>Raisa Marcelino do Nascimento</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>44</td><td class="tempo">1:23:02</td><td>Patricia Miranda Rodrigues Ribeiro Martins</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>45</td><td class="tempo">1:23:05</td><td>Jocasta Oliboni da Luz</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>46</td><td class="tempo">1:23:13</td><td>Letycia nogueira</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>47</td><td class="tempo">1:23:22</td><td>Marilene de Jesus Ferreira</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>48</td><td class="tempo">1:23:23</td><td>Carina Prina Carlan</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>49</td><td class="tempo">1:23:32</td><td>Ana Julia Resende Nogueira</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>50</td><td class="tempo">1:23:33</td><td>Josciene Teixeira</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>51</td><td class="tempo">1:23:41</td><td>Raimunda Jesus dos Santos Lima</td><td>João Pessoa</td><td>01/08/2026</td></tr>
+<tr><td>52</td><td class="tempo">1:23:48</td><td>Jaqueline Fernandes Mano da Silva</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>53</td><td class="tempo">1:24:01</td><td>Daniela Lavignatti</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>54</td><td class="tempo">1:24:14</td><td>Thanise Yara Silva Natali</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>55</td><td class="tempo">1:24:18</td><td>Bruna Sousa de Oliveira</td><td>Florianópolis</td><td>03/05/2026</td></tr>
+<tr><td>56</td><td class="tempo">1:24:22</td><td>Janine Rodrigues de Oliveira</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>57</td><td class="tempo">1:24:26</td><td>Marily dos Santos</td><td>Salvador</td><td>26/04/2026</td></tr>
+<tr><td>57</td><td class="tempo">1:24:26</td><td>Marina de Souza</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>59</td><td class="tempo">1:24:28</td><td>Paula Amanda da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>60</td><td class="tempo">1:24:41</td><td>Isadora Domingues da Costa de Castro</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>61</td><td class="tempo">1:24:42</td><td>Alexia Fidalgo</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>62</td><td class="tempo">1:24:43</td><td>Dione D´Agostini Chillemi</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>63</td><td class="tempo">1:24:44</td><td>Raimunda Silva</td><td>Belo Horizonte</td><td>28/07/2026</td></tr>
+<tr><td>64</td><td class="tempo">1:24:48</td><td>Andrea Corazzari</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>65</td><td class="tempo">1:24:51</td><td>Luana Steffen da Silva</td><td>Porto Alegre</td><td>30/05/2026</td></tr>
+<tr><td>66</td><td class="tempo">1:24:52</td><td>Natália Regina Painelli</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>67</td><td class="tempo">1:24:57</td><td>Adriane Coelho Soares</td><td>Rio de Janeiro</td><td>06/06/2026</td></tr>
+<tr><td>67</td><td class="tempo">1:24:57</td><td>Letícia Tessi</td><td>São Paulo</td><td>17/05/2026</td></tr>
+            </tbody>
+
+        </table>
+    </section>
+
+</section>
+<section id="maratona" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Ranking DPC - Maratona 2026</h2>
+        <p>Ranking Brasileiro DPC de Maratona - 2026</p>
+    </section>
+
+    <section class="ranking-controls">
+        <button id="btn-maratona-masculino" class="category-button active">Masculino</button>
+        <button id="btn-maratona-feminino" class="category-button">Feminino</button>
+    </section>
+
+    <section id="ranking-maratona-masculino" class="table-container">
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+<tr><td>1</td><td class="tempo">2:10:46</td><td>Fábio Jesus Correia</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>2</td><td class="tempo">2:11:34</td><td>Wendell Jeronimo Souza</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>3</td><td class="tempo">2:12:10</td><td>Johnatas de Oliveira Cruz</td><td>Sevilla (ESP)</td><td>15/02/2026</td></tr>
+<tr><td>4</td><td class="tempo">2:12:56</td><td>Giovani dos Santos</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>5</td><td class="tempo">2:14:26</td><td>Paulo Roberto de Almeida Paula</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>6</td><td class="tempo">2:16:34</td><td>Gilmar Silvestre Lopes</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>7</td><td class="tempo">2:16:48</td><td>Melquisedeque Messias Ribeiro</td><td>Rio de Janeiro</td><td>17/05/2026</td></tr>
+<tr><td>8</td><td class="tempo">2:16:55</td><td>Justino Pedro da Silva</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>9</td><td class="tempo">2:17:18</td><td>Antônio Marco Pereira de Araújo</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>10</td><td class="tempo">2:17:47</td><td>Flávio Henrique Guimarães Andrade</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>11</td><td class="tempo">2:17:52</td><td>Ederson Vilela Pereira</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>12</td><td class="tempo">2:19:12</td><td>Givaldo Araújo Sena</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>13</td><td class="tempo">2:19:30</td><td>José Marcio Leão da Silva</td><td>Guaratuba</td><td>03/05/2026</td></tr>
+<tr><td>14</td><td class="tempo">2:20:10</td><td>Joilson Bernardo da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>15</td><td class="tempo">2:20:29</td><td>André Luiz Silva Antonio</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>16</td><td class="tempo">2:20:40</td><td>André Nascimento da Silva</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>17</td><td class="tempo">2:20:50</td><td>Renato Jose da Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>18</td><td class="tempo">2:20:51</td><td>Naisson Nidgie da Silva Pinheiro</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>19</td><td class="tempo">2:21:02</td><td>Vagner da Silva Noronha</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>20</td><td class="tempo">2:21:16</td><td>Guilherme Ramos da Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">2:21:20</td><td>Felipe Borges Petersen</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>22</td><td class="tempo">2:21:40</td><td>Hiago Silva de Oliveira</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>23</td><td class="tempo">2:22:03</td><td>José Eduardo Papini de Oliveira</td><td>Sevilla (ESP)</td><td>15/02/2026</td></tr>
+<tr><td>24</td><td class="tempo">2:22:09</td><td>Silvio Agostinho da Silva Filho</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>25</td><td class="tempo">2:22:22</td><td>Miguel Morone Neto</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>26</td><td class="tempo">2:22:38</td><td>Gabriel Alves Pozzo</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>27</td><td class="tempo">2:22:50</td><td>Michael de Paula Passos</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>28</td><td class="tempo">2:22:54</td><td>Vitor dos Santos Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>29</td><td class="tempo">2:22:57</td><td>Thiago dos Santos Costa</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>30</td><td class="tempo">2:23:23</td><td>Victor de Oliveira Andrade</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>31</td><td class="tempo">2:23:47</td><td>José Eraldo Lima</td><td>Cape Town (RSA)</td><td>24/05/2026</td></tr>
+<tr><td>32</td><td class="tempo">2:23:49</td><td>Bruno da Rocha Berger</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>33</td><td class="tempo">2:23:51</td><td>Fábio Rodrigues de Souza Cordeiro</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>34</td><td class="tempo">2:24:03</td><td>Rafael Leôncio da Silva</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>35</td><td class="tempo">2:24:28</td><td>Carlos Henrique de Souza</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>36</td><td class="tempo">2:24:45</td><td>Leonardo Alves dos Santos</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>37</td><td class="tempo">2:25:05</td><td>Paulo Henrique Tumelero</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>38</td><td class="tempo">2:25:52</td><td>Alexandre Tingas</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>39</td><td class="tempo">2:26:39</td><td>Jamal Soufane</td><td>Tokyo (JAP)</td><td>01/03/2026</td></tr>
+<tr><td>40</td><td class="tempo">2:26:40</td><td>Ronald Jefferson de Arruda Lopes</td><td>Belo Horizonte</td><td>28/06/2026</td></tr>
+<tr><td>41</td><td class="tempo">2:27:05</td><td>Fabricio Gomes Santos</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>42</td><td class="tempo">2:27:14</td><td>Willdeberg Claudino dos Santos</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>43</td><td class="tempo">2:27:34</td><td>Raphael Magalhães</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>44</td><td class="tempo">2:27:55</td><td>Cristian Sosa Planas</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>45</td><td class="tempo">2:27:56</td><td>Joscimar Lima Rodrigues</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>46</td><td class="tempo">2:28:01</td><td>Guilherme Amaral Zica</td><td>Paris (FRA)</td><td>12/04/2026</td></tr>
+<tr><td>47</td><td class="tempo">2:28:20</td><td>Samuel Souza do Nascimento</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>48</td><td class="tempo">2:28:28</td><td>Cleiton Nascimento da Rocha Jardim</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>49</td><td class="tempo">2:28:46</td><td>Antonio Luiz da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>50</td><td class="tempo">2:28:58</td><td>João Barnewitz</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>51</td><td class="tempo">2:29:16</td><td>Rafael Andrade</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>52</td><td class="tempo">2:29:22</td><td>Franck Caldeira de Almeida</td><td>Campo Grande</td><td>04/07/2026</td></tr>
+<tr><td>53</td><td class="tempo">2:29:37</td><td>Guilherme Minozzo</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>54</td><td class="tempo">2:29:46</td><td>Claudio Rosa Lopes</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>55</td><td class="tempo">2:29:46</td><td>Daniel Silva de Oliveira</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>56</td><td class="tempo">2:29:49</td><td>Valdano Reis Moreira</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>57</td><td class="tempo">2:29:50</td><td>Everton Barbosa da Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>58</td><td class="tempo">2:29:52</td><td>Renilson Vitorino da Silva</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>59</td><td class="tempo">2:30:01</td><td>André Luiz Lima da Conceição</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>60</td><td class="tempo">2:30:12</td><td>Eric Adriano Silva Santos</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>61</td><td class="tempo">2:30:13</td><td>Marcelino Soares do Nascimento</td><td>Maceió</td><td>02/08/2026</td></tr>
+<tr><td>62</td><td class="tempo">2:30:30</td><td>Luiz Marcio Ramos Soares</td><td>Lima (PER)</td><td>24/05/2026</td></tr>
+<tr><td>63</td><td class="tempo">2:30:41</td><td>Gildeandro Vieira dos Santos</td><td>Maceió</td><td>02/08/2026</td></tr>
+<tr><td>64</td><td class="tempo">2:30:45</td><td>Walter de Almeida Ramos Neto</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>65</td><td class="tempo">2:30:49</td><td>Jefferson Coradette Pereira Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>66</td><td class="tempo">2:31:11</td><td>Tiago Vieira Silva</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>67</td><td class="tempo">2:31:18</td><td>José Milton da Silva Junior</td><td>Maceió</td><td>02/08/2026</td></tr>
+<tr><td>68</td><td class="tempo">2:31:40</td><td>Guilherme Neto de Sousa Ferreira</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>69</td><td class="tempo">2:31:41</td><td>Renzo França Pereira da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>70</td><td class="tempo">2:31:50</td><td>Neemias Alves Cruz</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>71</td><td class="tempo">2:31:52</td><td>Jurandyr Couto Junior</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>72</td><td class="tempo">2:31:58</td><td>Dieimesson Jean de Almeira</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>73</td><td class="tempo">2:32:01</td><td>Lucas José Petsa</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>74</td><td class="tempo">2:32:17</td><td>Ed Silva</td><td>Cape Town (RSA)</td><td>24/05/2026</td></tr>
+<tr><td>75</td><td class="tempo">2:32:23</td><td>Guilherme Henrique Bueno Czuy</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>76</td><td class="tempo">2:32:23</td><td>Matheus da Silva</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>77</td><td class="tempo">2:32:25</td><td>Thiago Bianchini</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>78</td><td class="tempo">2:32:28</td><td>Laercio Barbosa dos Santos</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>79</td><td class="tempo">2:32:30</td><td>Kscudo Oliveira</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>80</td><td class="tempo">2:32:47</td><td>Adriano José dos Santos</td><td>João Pessoa</td><td>02/08/2026</td></tr>
+<tr><td>81</td><td class="tempo">2:32:59</td><td>Eder Uillian Oliveira da Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>82</td><td class="tempo">2:33:00</td><td>Jonas de Melo Viana</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>83</td><td class="tempo">2:33:01</td><td>André Luiz Alves Quirino</td><td>Guaratuba</td><td>03/05/2026</td></tr>
+<tr><td>84</td><td class="tempo">2:33:17</td><td>Renato Belegante de Assunção</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>85</td><td class="tempo">2:33:20</td><td>Daniel Silva Costa</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>86</td><td class="tempo">2:33:22</td><td>Valmir Martins dos Santos</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>87</td><td class="tempo">2:33:27</td><td>Rodrigo Lobo</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>88</td><td class="tempo">2:33:28</td><td>Clemersom Neis</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>89</td><td class="tempo">2:33:30</td><td>Gabriel Picarelli</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>90</td><td class="tempo">2:33:36</td><td>Luiz Ferreira de Mesquita</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>91</td><td class="tempo">2:33:45</td><td>Marcos Itano</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>92</td><td class="tempo">2:33:46</td><td>Lucas Heckenbick Figueiredo</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>93</td><td class="tempo">2:33:48</td><td>Lucas Miranda</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>94</td><td class="tempo">2:33:49</td><td>Fayles Gomes Galindo</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>95</td><td class="tempo">2:33:52</td><td>Leandro Severgnini Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>96</td><td class="tempo">2:33:55</td><td>Alander Rodrigo Metz</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>97</td><td class="tempo">2:33:55</td><td>Luan Oliveira</td><td>Belo Horizonte</td><td>28/06/2026</td></tr>
+<tr><td>98</td><td class="tempo">2:33:56</td><td>Luiz Henrique de Lima</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>99</td><td class="tempo">2:33:59</td><td>Elizeu Luiz Wilmsen</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>100</td><td class="tempo">2:34:10</td><td>José Júlio do Nascimento</td><td>Maceió</td><td>02/08/2026</td></tr>
+<tr><td>101</td><td class="tempo">2:34:10</td><td>Nodario Cardoso Lopes</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>102</td><td class="tempo">2:34:12</td><td>José Alef Teofilo</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>103</td><td class="tempo">2:34:20</td><td>Lucas Rocha de Lima</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>104</td><td class="tempo">2:34:30</td><td>Pedro Henrique Matias Hatinger</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>105</td><td class="tempo">2:34:32</td><td>Leandro Gomes Ferreira</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>106</td><td class="tempo">2:34:49</td><td>Nivaldo Vidal da Silva</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>107</td><td class="tempo">2:34:50</td><td>Nilo Nascimento dos Santos</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>108</td><td class="tempo">2:34:54</td><td>Alexandre Trajano</td><td>Maceió</td><td>02/08/2026</td></tr>
+<tr><td>109</td><td class="tempo">2:34:55</td><td>Renan Winkler Obayashi</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>110</td><td class="tempo">2:34:59</td><td>Santiago Ascenço</td><td>Barcelona (ESP)</td><td>15/03/2026</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="ranking-maratona-feminino" class="table-container hidden">
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Pos.</th>
+                    <th>Tempo</th>
+                    <th>Atleta</th>
+                    <th>Local</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody>
+<tr><td>1</td><td class="tempo">2:36:58</td><td>Marina Richwin</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>2</td><td class="tempo">2:37:32</td><td>Jéssica Ladeira Soares</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>3</td><td class="tempo">2:38:30</td><td>Mirela Saturnino de Andrade</td><td>Hamburgo (ALE)</td><td>26/04/2026</td></tr>
+<tr><td>4</td><td class="tempo">2:38:58</td><td>Amanda Aparecida de Oliveira</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>5</td><td class="tempo">2:39:39</td><td>Rejane Ester Bispo da Silva</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>6</td><td class="tempo">2:39:56</td><td>Vaniclea Moura</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>7</td><td class="tempo">2:42:19</td><td>Maria Aparecida Ferraz</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>8</td><td class="tempo">2:44:16</td><td>Francine dos Santos Moura</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>9</td><td class="tempo">2:45:39</td><td>Estefania Unzo</td><td>Sevilla (ESP)</td><td>15/02/2026</td></tr>
+<tr><td>10</td><td class="tempo">2:45:46</td><td>Marlei Eunice Willers</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>11</td><td class="tempo">2:47:43</td><td>Gabriela Rodrigues Mattos Chammas</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>12</td><td class="tempo">2:48:58</td><td>Liana Tortato</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>13</td><td class="tempo">2:49:13</td><td>Aimee Motta Souza</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>14</td><td class="tempo">2:49:21</td><td>Mariana Ignácio</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>15</td><td class="tempo">2:49:35</td><td>Carla Zimmermann</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>16</td><td class="tempo">2:49:45</td><td>Luiza de Azevedo</td><td>Tokyo (JAP)</td><td>01/03/2026</td></tr>
+<tr><td>17</td><td class="tempo">2:50:17</td><td>Nicole Rauen</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>18</td><td class="tempo">2:50:46</td><td>Gisele Venancio</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>19</td><td class="tempo">2:51:19</td><td>Janaina Neri</td><td>Paris (FRA)</td><td>12/04/2026</td></tr>
+<tr><td>20</td><td class="tempo">2:51:19</td><td>Jéssica Amanda Pereira</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>21</td><td class="tempo">2:51:42</td><td>Jocasta Oliboni da Luz</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>22</td><td class="tempo">2:52:06</td><td>Dione D’Agostini</td><td>Sevilla (ESP)</td><td>15/02/2026</td></tr>
+<tr><td>23</td><td class="tempo">2:52:06</td><td>Gabriela Lamb Bender</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>24</td><td class="tempo">2:52:39</td><td>Jaciane Barroso de Jesus</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>25</td><td class="tempo">2:53:31</td><td>Vitória Rezende Amaro Gomes</td><td>London (GBR)</td><td>26/04/2026</td></tr>
+<tr><td>26</td><td class="tempo">2:53:51</td><td>Elisa Scandiuzzi</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>27</td><td class="tempo">2:54:13</td><td>Alessandra Martins Diniz</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>28</td><td class="tempo">2:54:21</td><td>Eulalia dos Santos</td><td>São Paulo</td><td>12/04/2026</td></tr>
+<tr><td>29</td><td class="tempo">2:55:01</td><td>Aline Prudêncio de Freitas</td><td>Guaratuba</td><td>02/05/2026</td></tr>
+<tr><td>30</td><td class="tempo">2:56:42</td><td>Bruna Ribeiro Andrade Fonseca</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>31</td><td class="tempo">2:57:06</td><td>Marcia Monteiro Rodrigues Cavalheiro</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>32</td><td class="tempo">2:57:39</td><td>Paula Adriana dos Santos</td><td>Belo Horizonte</td><td>28/06/2026</td></tr>
+<tr><td>33</td><td class="tempo">2:57:41</td><td>Camila Ferrão</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>34</td><td class="tempo">2:57:41</td><td>Giovanna Battaglin Espigares</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>35</td><td class="tempo">2:57:47</td><td>Adriane Soares</td><td>Barcelona (ESP)</td><td>15/03/2026</td></tr>
+<tr><td>36</td><td class="tempo">2:57:54</td><td>Gisely Carvalho</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>37</td><td class="tempo">2:58:09</td><td>Rosângela Vieira</td><td>Matinhos</td><td>26/07/2026</td></tr>
+<tr><td>38</td><td class="tempo">2:58:44</td><td>Marcella Falcão</td><td>Paris (FRA)</td><td>12/04/2026</td></tr>
+<tr><td>39</td><td class="tempo">2:58:55</td><td>Nadia Ferreira Lima</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>40</td><td class="tempo">2:59:10</td><td>Raimunda Silva</td><td>Rio de Janeiro</td><td>07/06/2026</td></tr>
+<tr><td>41</td><td class="tempo">2:59:12</td><td>Janaína Molina Nishikubo</td><td>Tokyo (JAP)</td><td>01/03/2026</td></tr>
+<tr><td>42</td><td class="tempo">2:59:13</td><td>Cristina Tina</td><td>Zürich (SUI)</td><td>12/04/2026</td></tr>
+<tr><td>43</td><td class="tempo">2:59:17</td><td>Daniele Trevisan Sbeghen</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+<tr><td>44</td><td class="tempo">2:59:25</td><td>Fernanda Dutra</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>45</td><td class="tempo">2:59:33</td><td>Isabella Erbolato Quarterone</td><td>Boston (USA)</td><td>20/04/2026</td></tr>
+<tr><td>46</td><td class="tempo">2:59:43</td><td>Renata Moreno dos Santos</td><td>São Paulo</td><td>26/07/2026</td></tr>
+<tr><td>47</td><td class="tempo">2:59:46</td><td>Francielle Elis de Souza Marim</td><td>Porto Alegre</td><td>12/07/2026</td></tr>
+<tr><td>48</td><td class="tempo">2:59:55</td><td>Monique Carneiro</td><td>Porto Alegre</td><td>31/05/2026</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+</section>
+<section id="provas-milha" style="display:none;">
+
+    <section class="ranking-header">
+    <h2>Provas do Brasil 2026 <span style="color:#ff6b00;">- Milha</span></h2>
+</section>
+
+    <section class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Prova</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>14 mar 2026</td>
+                    <td>Meia Maratona de Campos do Jordão</td>
+                    <td>Campos do Jordão</td>
+                </tr>
+
+                <tr>
+                    <td>02 mai 2026</td>
+                    <td>Meia Maratona Internacional de Florianópolis Oakberry</td>
+                    <td>Florianópolis</td>
+                </tr>
+
+                <tr>
+                    <td>17 mai 2026</td>
+                    <td>VI Meia Maratona River Shopping</td>
+                    <td>Petrolina</td>
+                </tr>
+
+                <tr>
+                    <td>06 jun 2026</td>
+                    <td>Corrida dos Empresários</td>
+                    <td>Parauapebas</td>
+                </tr>
+
+                <tr>
+                    <td>28 jun 2026</td>
+                    <td>1ª Maratona e 17ª Meia Maratona Internacional de Belo Horizonte</td>
+                    <td>Belo Horizonte</td>
+                </tr>
+
+                <tr>
+                    <td>04 jul 2026</td>
+                    <td>Maratona de Campo Grande</td>
+                    <td>Campo Grande</td>
+                </tr>
+
+                <tr>
+                    <td>16 ago 2026</td>
+                    <td>Brazilian Road Running Championships</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </section>
+    </section>
+<section id="provas-5km" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Provas do Brasil 2026 <span style="color:#ff6b00;">- 5km</span></h2>
+    </section>
+
+    <section class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Prova</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>15 mar 2026</td>
+                    <td>Meia Maratona de Campos do Jordão</td>
+                    <td>Campos do Jordão</td>
+                </tr>
+
+                <tr>
+                    <td>02 mai 2026</td>
+                    <td>Meia Maratona Internacional de Florianópolis Oakberry</td>
+                    <td>Florianópolis</td>
+                </tr>
+
+                <tr>
+                    <td>17 mai 2026</td>
+                    <td>VI Meia Maratona River Shopping</td>
+                    <td>Petrolina</td>
+                </tr>
+
+                <tr>
+                    <td>07 jun 2026</td>
+                    <td>Corrida Dos Empresarios</td>
+                    <td>Parauapebas</td>
+                </tr>
+
+                <tr>
+                    <td>28 jun 2026</td>
+                    <td>1ª Maratona e 17ª Meia Maratona Internacional de Belo Horizonte</td>
+                    <td>Belo Horizonte</td>
+                </tr>
+
+                <tr>
+                    <td>04 jul 2026</td>
+                    <td>Maratona de Campo Grande</td>
+                    <td>Campo Grande</td>
+                </tr>
+
+                <tr>
+                    <td>12 jul 2026</td>
+                    <td>III Corrida Internacional Do Agronegócio</td>
+                    <td>Petrolina</td>
+                </tr>
+
+               <tr>
+                    <td>02 ago 2026</td>
+                    <td>Maratona Internacional de João Pessoa</td>
+                    <td>João Pessoa</td>
+                </tr>
+
+                <tr>
+                    <td>16 ago 2026</td>
+                    <td>Brazilian Road Running Championships</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+
+                <tr>
+                    <td>23 ago 2026</td>
+                    <td>1ª Meia Maratona de Jundiaí</td>
+                    <td>Jundiaí</td>
+                </tr>
+
+                <tr>
+                    <td>30 ago 2026</td>
+                    <td>5K RP RUN</td>
+                    <td>Praia Grande</td>
+                </tr>
+
+                <tr>
+                    <td>20 set 2026</td>
+                    <td>Maratona de São José</td>
+                    <td>São José</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+    </section>
+    </section>
+<section id="provas-10km" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Provas do Brasil 2026 <span style="color:#ff6b00;">- 10km</span></h2>
+    </section>
+
+    <section class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Prova</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr>
+    <td>11 jan 2026</td>
+    <td>Corrida de Reis</td>
+    <td>Cuiabá</td>
+</tr>
+
+<tr>
+    <td>15 mar 2026</td>
+    <td>Meia Maratona de Campos do Jordão</td>
+    <td>Campos do Jordão</td>
+</tr>
+
+<tr>
+    <td>02 mai 2026</td>
+    <td>Meia Maratona Internacional de Florianópolis Oakberry</td>
+    <td>Florianópolis</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>Asics Golden Run SP</td>
+    <td>São Paulo</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>VI Meia Maratona River Shopping</td>
+    <td>Petrolina</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>10km Tribuna</td>
+    <td>Santos</td>
+</tr>
+
+<tr>
+    <td>31 mai 2026</td>
+    <td>10K SP Challenge</td>
+    <td>São Paulo</td>
+</tr>
+
+<tr>
+    <td>05 jun 2026</td>
+    <td>10K da Cidade do Rio de Janeiro</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>28 jun 2026</td>
+    <td>1ª Maratona e 17ª Meia Maratona Internacional de Belo Horizonte</td>
+    <td>Belo Horizonte</td>
+</tr>
+
+<tr>
+    <td>12 jul 2026</td>
+    <td>Asics Golden Run RJ</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>16 ago 2026</td>
+    <td>28ª Meia Maratona Internacional do Rio de Janeiro</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>23 ago 2026</td>
+    <td>1ª Meia Maratona de Jundiaí</td>
+    <td>Jundiaí</td>
+</tr>
+
+<tr>
+    <td>20 set 2026</td>
+    <td>Maratona de São José</td>
+    <td>São José</td>
+</tr>               
+            </tbody>
+
+        </table>
+    </section>
+    </section>
+<section id="provas-meia" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Provas do Brasil 2026 <span style="color:#ff6b00;">- Meia Maratona</span></h2>
+    </section>
+
+    <section class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Prova</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr>
+    <td>15 mar 2026</td>
+    <td>Meia Maratona de Campos do Jordão</td>
+    <td>Campos do Jordão</td>
+</tr>
+
+<tr>
+    <td>26 abr 2026</td>
+    <td>Meia Maratona Internacional de Balneário Camboriú</td>
+    <td>Balneário Camboriú</td>
+</tr>
+
+<tr>
+    <td>26 abr 2026</td>
+    <td>21K Salvador</td>
+    <td>Salvador</td>
+</tr>
+
+<tr>
+    <td>02 mai 2026</td>
+    <td>Maratona Internacional do Paraná – Edição Ponte de Guaratuba</td>
+    <td>Guaratuba</td>
+</tr>
+
+<tr>
+    <td>03 mai 2026</td>
+    <td>Meia Maratona Internacional de Florianópolis Oakberry</td>
+    <td>Florianópolis</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>Asics Golden Run SP</td>
+    <td>São Paulo</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>VI Meia Maratona River Shopping</td>
+    <td>Petrolina</td>
+</tr>
+
+<tr>
+    <td>30 mai 2026</td>
+    <td>Meia Maratona Internacional de Porto Alegre</td>
+    <td>Porto Alegre</td>
+</tr>
+
+<tr>
+    <td>06 jun 2026</td>
+    <td>Meia Maratona da Cidade do Rio de Janeiro</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>07 jun 2026</td>
+    <td>Corrida Dos Empresarios</td>
+    <td>Parauapebas</td>
+</tr>
+
+<tr>
+    <td>28 jun 2026</td>
+    <td>1ª Maratona e 17ª Meia Maratona Internacional de Belo Horizonte</td>
+    <td>Belo Horizonte</td>
+</tr>
+
+<tr>
+    <td>05 jul 2026</td>
+    <td>Maratona de Campo Grande</td>
+    <td>Campo Grande</td>
+</tr>
+
+<tr>
+    <td>12 jul 2026</td>
+    <td>New Balance 42k Porto Alegre - Half Marathon</td>
+    <td>Porto Alegre</td>
+</tr>
+
+<tr>
+    <td>12 jul 2026</td>
+    <td>Asics Golden Run RJ</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>19 jul 2026</td>
+    <td>14º Meia Maratona Internacional De Ribeirão Preto</td>
+    <td>Ribeirão Preto</td>
+</tr>
+
+<tr>
+    <td>26 jul 2026</td>
+    <td>SP City Marathon</td>
+    <td>São Paulo</td>
+</tr>
+
+<tr>
+    <td>01 ago 2026</td>
+    <td>Maratona Internacional de Maceió</td>
+    <td>Maceió</td>
+</tr>
+
+<tr>
+    <td>01 ago 2026</td>
+    <td>Maratona Internacional de João Pessoa</td>
+    <td>João Pessoa</td>
+</tr>
+
+<tr>
+    <td>02 ago 2026</td>
+    <td>LIVE!42K XP Brasília</td>
+    <td>Brasília</td>
+</tr>
+
+<tr>
+    <td>16 ago 2026</td>
+    <td>28ª Meia Maratona Internacional do Rio de Janeiro</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>16 ago 2026</td>
+    <td>Brazilian Road Running Championships</td>
+    <td>Rio de Janeiro</td>
+</tr>
+
+<tr>
+    <td>16 ago 2026</td>
+    <td>Meia Maratona Internacional de Navegantes - SC</td>
+    <td>Navegantes</td>
+</tr>
+
+<tr>
+    <td>23 ago 2026</td>
+    <td>1ª Meia Maratona de Jundiaí</td>
+    <td>Jundiaí</td>
+</tr>
+
+<tr>
+    <td>29 ago 2026</td>
+    <td>Maratona Internacional de Floripa Fibra - Half Marathon</td>
+    <td>Florianópolis</td>
+</tr>
+
+<tr>
+    <td>20 set 2026</td>
+    <td>Meia Maratona do Sol Sicredi</td>
+    <td>Natal</td>
+</tr>
+
+<tr>
+    <td>20 set 2026</td>
+    <td>Maratona de São José</td>
+    <td>São José</td>
+</tr>
+
+<tr>
+    <td>27 set 2026</td>
+    <td>Marathon Criciuma</td>
+    <td>Criciúma</td>
+</tr>
+
+<tr>
+    <td>11 out 2026</td>
+    <td>2ª Meia Maratona do Mercado Público</td>
+    <td>Porto Alegre</td>
+</tr>
+
+<tr>
+    <td>29 nov 2026</td>
+    <td>Venus Womens Half Marathon</td>
+    <td>São Paulo</td>
+</tr>   
+            </tbody>
+
+        </table>
+    </section>
+    </section>
+<section id="provas-maratona" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Provas do Brasil 2026 <span style="color:#ff6b00;">- Maratona</span></h2>
+    </section>
+
+    <section class="table-container">
+        <table class="ranking-table">
+
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Prova</th>
+                    <th>Cidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+<tr>
+    <td>12 abr 2026</td>
+    <td>30ª Maratona Internacional de Sao Paulo</td>
+    <td>Sao Paulo</td>
+</tr>
+
+<tr>
+    <td>03 mai 2026</td>
+    <td>Maratona Internacional do Paraná – Edição Ponte de Guaratuba</td>
+    <td>Guaratuba</td>
+</tr>
+
+<tr>
+    <td>17 mai 2026</td>
+    <td>4ª Maratona Internacional FMO</td>
+    <td>Olinda</td>
+</tr>
+
+<tr>
+    <td>31 mai 2026</td>
+    <td>41º Maratona Internacional de Porto Alegre</td>
+    <td>Porto Alegre</td>
+</tr>
+
+<tr>
+    <td>07 jun 2026</td>
+    <td>Maratona da Cidade do Rio de Janeiro</td>
+    <td>Rio de Janeiro</td>
+</tr>
+<td>28 jun 2026</td>
+                    <td>1ª Maratona e 17ª Meia Maratona Internacional de Belo Horizonte</td>
+                    <td>Belo Horizonte</td>
+                </tr>
+<tr>
+    <td>05 jul 2026</td>
+    <td>Maratona de Campo Grande</td>
+    <td>Campo Grande</td>
+</tr>
+
+<tr>
+    <td>12 jul 2026</td>
+    <td>New Balance 42K Porto Alegre</td>
+    <td>Porto Alegre</td>
+</tr>
+
+<tr>
+    <td>26 jul 2026</td>
+    <td>SP City Marathon</td>
+    <td>São Paulo</td>
+</tr>
+
+<tr>
+    <td>26 jul 2026</td>
+    <td>Maratona do Litoral</td>
+    <td>Matinhos</td>
+</tr>
+
+<tr>
+    <td>02 ago 2026</td>
+    <td>Maratona Internacional de Maceió</td>
+    <td>Maceió</td>
+</tr>
+
+<tr>
+    <td>02 ago 2026</td>
+    <td>Maratona Internacional de João Pessoa</td>
+    <td>João Pessoa</td>
+</tr>
+
+<tr>
+    <td>02 ago 2026</td>
+    <td>LIVE!42K XP Brasília</td>
+    <td>Brasília</td>
+</tr>
+
+<tr>
+    <td>30 ago 2026</td>
+    <td>13th International Marathon of Goiania in Movimento</td>
+    <td>Goiania</td>
+</tr>
+
+<tr>
+    <td>30 ago 2026</td>
+    <td>Maratona Internacional de Floripa Fibra</td>
+    <td>Florianopolis</td>
+</tr>
+
+<tr>
+    <td>20 set 2026</td>
+    <td>Maratona de São José</td>
+    <td>São José</td>
+</tr>
+
+<tr>
+    <td>27 set 2026</td>
+    <td>Maratona Salvador</td>
+    <td>Salvador</td>
+</tr>
+
+<tr>
+    <td>27 set 2026</td>
+    <td>Marathon Criciuma</td>
+    <td>Criciuma</td>
+</tr>
+
+<tr>
+    <td>11 out 2026</td>
+    <td>4° Maratona Sesc de Pelotas</td>
+    <td>Pelotas</td>
+</tr>
+
+<tr>
+    <td>11 out 2026</td>
+    <td>Maratona de Jurerê</td>
+    <td>Florianopolis</td>
+</tr>
+
+<tr>
+    <td>01 nov 2026</td>
+    <td>Maratona de Aracaju</td>
+    <td>Aracaju</td>
+</tr>
+            </tbody>
+
+        </table>
+    </section>
+    </section>
+<section id="contato" style="display:none;">
+
+    <section class="ranking-header">
+        <h2>Contato</h2>
+        <p>Fale conosco</p>
+    </section>
+
+    <div class="criterios-box">
+
+        <p>Encontrou algum erro no ranking, está faltando alguma marca ou tem alguma dúvida ou sugestão?</p>
+
+        <p>Entre em contato pelo e-mail abaixo:</p>
+
+        <p>
+            <strong>rankingdpc@gmail.com</strong>
+        </p>
+
+        <p>Todas as mensagens serão analisadas.</p>
+
+    </div>
+
+</section>
+<script src="script.js"></script>
+
+</body>
+</html>
