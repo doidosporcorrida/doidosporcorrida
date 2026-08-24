@@ -884,3 +884,17 @@ nav button:hover {
         white-space: nowrap;
     }
 }
+.ranking-table th:nth-child(3),
+.ranking-table td:nth-child(3) {
+    width: 40% !important;
+}
+
+.ranking-table th:nth-child(4),
+.ranking-table td:nth-child(4) {
+    width: 23% !important;
+}
+
+.ranking-table th:nth-child(5),
+.ranking-table td:nth-child(5) {
+    width: 20% !important;
+}
